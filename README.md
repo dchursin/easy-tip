@@ -1,1 +1,1 @@
-# easy-tip
+# easy-tips
