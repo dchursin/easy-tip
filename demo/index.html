@@ -1,0 +1,39 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+      <title>Description plugin page</title>
+      <link href="http://fonts.googleapis.com/css?family=Oswald:400,700" rel="stylesheet" type="text/css">
+      <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+      <link href="css/reset.css" rel="stylesheet" type="text/css">
+      <link href="css/style.css" rel="stylesheet" type="text/css">
+      <link href="css/easy-tips.min.css" rel="stylesheet" type="text/css">
+      <script src="js/jquery.easy-tips.min.js" type="text/javascript"></script>
+      <script type="text/javascript">
+         $(function() {
+            $('.tooltip-default-focus').easytips();
+            $('.tooltip-default-click').easytips({ controlAction: 'click' });
+            $('.tooltip-default-hover').easytips({ controlAction: 'hover' });
+            $('.tooltip-info-focus').easytips({ tooltipClass: 'info', tooltipDirection: 'top', tooltipSize: 'tiny', tooltipOpacity: .7, fadeSpeed: 550 });
+            $('.tooltip-info-click').easytips({ controlAction: 'click', tooltipClass: 'info', tooltipDirection: 'top', tooltipSize: 'tiny', tooltipClose: true, tooltipOpacity: .7, fadeSpeed: 550 });
+            $('.tooltip-info-hover').easytips({ controlAction: 'hover', tooltipClass: 'info', tooltipDirection: 'top', tooltipSize: 'tiny', tooltipOpacity: .7, fadeSpeed: 550 });
+            $('.tooltip-error-focus').easytips({ tooltipClass: 'error', tooltipDirection: 'left', tooltipSize: 'large', tooltipOpacity: .8, fadeSpeed: 1550 });
+            $('.tooltip-error-click').easytips({ controlAction: 'click', tooltipClass: 'error', tooltipDirection: 'left', tooltipSize: 'large', tooltipClose: true, tooltipOpacity: .8, fadeSpeed: 1550 });
+            $('.tooltip-error-hover').easytips({ controlAction: 'hover', tooltipClass: 'error', tooltipDirection: 'left', tooltipSize: 'large', tooltipOpacity: .8, fadeSpeed: 1550 });
+            $('.tooltip-warning-focus').easytips({ tooltipClass: 'warning', tooltipDirection: 'bottom', tooltipSize: 'huge', tooltipOpacity: .9, fadeSpeed: 2550 });
+            $('.tooltip-warning-click').easytips({ controlAction: 'click', tooltipClass: 'warning', tooltipDirection: 'bottom', tooltipSize: 'huge', tooltipClose: true, tooltipOpacity: .9, fadeSpeed: 2550 });
+            $('.tooltip-warning-hover').easytips({ controlAction: 'hover', tooltipClass: 'warning', tooltipDirection: 'bottom', tooltipSize: 'huge', tooltipOpacity: .9, fadeSpeed: 2550 });
+         });
+      </script>
+   </head>
+   <body>
+      <div class="container">
+         <h1><span>easy-tips</span>.js</h1>
+         <form id="input-form">
+            <input type="text" class="tooltip-default-focus" data-tooltip-text="Hello, World!" /><a href="#" class="tooltip-default-button-click tooltip-default-click" data-tooltip-text="Hello World!">?</a><a href="#" class="tooltip-default-button-hover tooltip-default-hover" data-tooltip-text="Hello World!">?</a>
+            <input type="text" class="tooltip-info-focus" data-tooltip-text="Hello, World!" /><a href="#" class="tooltip-info-button-click tooltip-info-click" data-tooltip-text="Hello World!">?</a><a href="#" class="tooltip-info-button-hover tooltip-info-hover" data-tooltip-text="Hello World!">?</a>
+            <input type="text" class="tooltip-error-focus" data-tooltip-text="Hello, World!" /><a href="#" class="tooltip-error-button-click tooltip-error-click" data-tooltip-text="Hello World!">?</a><a href="#" class="tooltip-error-button-hover tooltip-error-hover" data-tooltip-text="Hello World!">?</a>
+            <input type="text" class="tooltip-warning-focus" data-tooltip-text="Hello, World!" /><a href="#" class="tooltip-warning-button-click tooltip-warning-click" data-tooltip-text="Hello World!">?</a><a href="#" class="tooltip-warning-button-hover tooltip-warning-hover" data-tooltip-text="Hello World!">?</a>
+         </form>
+      </div>
+   </body>
+</html>
